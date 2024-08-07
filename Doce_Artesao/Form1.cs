@@ -19,8 +19,14 @@ namespace Doce_Artesao
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string name = tbxName.Text;
+            string name = tbxCode.Text;
             MessageBox.Show("NOME: " + name);
+            this.Visible = false;
+            Form3 tela = new Form3();
+           
+            tela.ShowDialog();
+            this.Visible = true;
+
         }
 
         private void frmMain_Load(object sender, EventArgs e)
