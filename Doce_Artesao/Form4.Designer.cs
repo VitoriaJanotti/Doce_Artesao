@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.lblMenu = new System.Windows.Forms.Label();
             this.lblTexto = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblMenu
@@ -53,12 +54,25 @@
             this.lblTexto.TabIndex = 6;
             this.lblTexto.Text = "DOCE ARTESÃO ";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightCoral;
+            this.button1.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(805, 574);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(230, 36);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "SALVAR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1059, 638);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblMenu);
             this.Controls.Add(this.lblTexto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -73,5 +87,6 @@
 
         private System.Windows.Forms.Label lblMenu;
         private System.Windows.Forms.Label lblTexto;
+        private System.Windows.Forms.Button button1;
     }
 }

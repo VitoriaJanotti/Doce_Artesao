@@ -47,6 +47,7 @@
             this.btnView.TabIndex = 0;
             this.btnView.Text = "VIZUALIZAR ENCOMENDAS ";
             this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // btnThrow
             // 
@@ -57,6 +58,7 @@
             this.btnThrow.TabIndex = 1;
             this.btnThrow.Text = "LANÇAR ENCOMENDA ";
             this.btnThrow.UseVisualStyleBackColor = true;
+            this.btnThrow.Click += new System.EventHandler(this.btnThrow_Click);
             // 
             // btnMade
             // 
@@ -67,6 +69,7 @@
             this.btnMade.TabIndex = 2;
             this.btnMade.Text = "ENCOMENDAS REALIZADAS ";
             this.btnMade.UseVisualStyleBackColor = true;
+            this.btnMade.Click += new System.EventHandler(this.btnMade_Click);
             // 
             // btnStock
             // 
@@ -111,6 +114,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "VOLTAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form3
             // 
@@ -128,6 +132,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.Text = "Doce artesão ";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
