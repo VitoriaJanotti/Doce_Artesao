@@ -32,7 +32,6 @@
             this.btnView = new System.Windows.Forms.Button();
             this.btnThrow = new System.Windows.Forms.Button();
             this.btnMade = new System.Windows.Forms.Button();
-            this.btnStock = new System.Windows.Forms.Button();
             this.lblTexto = new System.Windows.Forms.Label();
             this.lblMenu = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -41,7 +40,7 @@
             // btnView
             // 
             this.btnView.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnView.Location = new System.Drawing.Point(38, 239);
+            this.btnView.Location = new System.Drawing.Point(57, 240);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(230, 36);
             this.btnView.TabIndex = 0;
@@ -52,7 +51,7 @@
             // btnThrow
             // 
             this.btnThrow.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThrow.Location = new System.Drawing.Point(274, 237);
+            this.btnThrow.Location = new System.Drawing.Point(408, 239);
             this.btnThrow.Name = "btnThrow";
             this.btnThrow.Size = new System.Drawing.Size(230, 37);
             this.btnThrow.TabIndex = 1;
@@ -63,24 +62,13 @@
             // btnMade
             // 
             this.btnMade.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMade.Location = new System.Drawing.Point(510, 238);
+            this.btnMade.Location = new System.Drawing.Point(743, 239);
             this.btnMade.Name = "btnMade";
             this.btnMade.Size = new System.Drawing.Size(230, 37);
             this.btnMade.TabIndex = 2;
             this.btnMade.Text = "ENCOMENDAS REALIZADAS ";
             this.btnMade.UseVisualStyleBackColor = true;
             this.btnMade.Click += new System.EventHandler(this.btnMade_Click);
-            // 
-            // btnStock
-            // 
-            this.btnStock.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStock.Location = new System.Drawing.Point(746, 239);
-            this.btnStock.Name = "btnStock";
-            this.btnStock.Size = new System.Drawing.Size(229, 36);
-            this.btnStock.TabIndex = 3;
-            this.btnStock.Text = "CADASTRAR PRODUTO ";
-            this.btnStock.UseVisualStyleBackColor = true;
-            this.btnStock.Click += new System.EventHandler(this.button4_Click);
             // 
             // lblTexto
             // 
@@ -125,7 +113,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblMenu);
             this.Controls.Add(this.lblTexto);
-            this.Controls.Add(this.btnStock);
             this.Controls.Add(this.btnMade);
             this.Controls.Add(this.btnThrow);
             this.Controls.Add(this.btnView);
@@ -143,7 +130,6 @@
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnThrow;
         private System.Windows.Forms.Button btnMade;
-        private System.Windows.Forms.Button btnStock;
         private System.Windows.Forms.Label lblTexto;
         private System.Windows.Forms.Label lblMenu;
         private System.Windows.Forms.Button button1;

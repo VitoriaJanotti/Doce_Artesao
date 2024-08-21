@@ -113,6 +113,16 @@ namespace Doce_Artesao.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2024_08_21_114221 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2024-08-21 114221", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mousse_de_acai_com_whey_protein__42962p52544 {
             get {
                 object obj = ResourceManager.GetObject("mousse-de-acai-com-whey-protein--42962p52544", resourceCulture);
