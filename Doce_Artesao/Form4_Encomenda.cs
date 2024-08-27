@@ -11,9 +11,9 @@ using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 namespace Doce_Artesao
 {
-    public partial class Form5 : Form
+    public partial class Form4_Encomenda : Form
     {
-        public Form5()
+        public Form4_Encomenda()
         {
             InitializeComponent();
         }

@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace Doce_Artesao
 {
-    public partial class Form4 : Form
+    public partial class Form5_Pedido : Form
     {
-        public Form4()
+        public Form5_Pedido()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form6_Load(object sender, EventArgs e)
         {
-            this.Close();   
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void lblMenu_Click(object sender, EventArgs e)
         {
 
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Doce_Artesao
 {
-    public partial class Form3 : Form
+    public partial class Form2_Menu : Form
     {
-        public Form3()
+        public Form2_Menu()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace Doce_Artesao
         private void lblTexto_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Form4 tela = new Form4();
+            Form3_View tela = new Form3_View();
 
             tela.ShowDialog();
             this.Visible = true;
@@ -39,7 +39,7 @@ namespace Doce_Artesao
         private void btnView_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Form4 tela = new Form4();
+            Form3_View tela = new Form3_View();
 
             tela.ShowDialog();
             this.Visible = true;
@@ -53,7 +53,7 @@ namespace Doce_Artesao
         private void btnThrow_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Form5 tela = new Form5();
+            Form4_Encomenda tela = new Form4_Encomenda();
 
             tela.ShowDialog();
             this.Visible = true;
@@ -62,7 +62,7 @@ namespace Doce_Artesao
         private void btnMade_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Form6 tela = new Form6();
+            Form5_Pedido tela = new Form5_Pedido();
 
             tela.ShowDialog();
             this.Visible = true;

@@ -22,7 +22,7 @@ namespace Doce_Artesao
             string name = tbxCode.Text;
             MessageBox.Show("NOME: " + name);
             this.Visible = false;
-            Form3 tela = new Form3();
+            Form2_Menu tela = new Form2_Menu();
            
             tela.ShowDialog();
             this.Visible = true;
@@ -42,6 +42,15 @@ namespace Doce_Artesao
         private void button1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form6_Cadastro tela = new Form6_Cadastro();
+
+            tela.ShowDialog();
+            this.Visible = true;
         }
     }
 }

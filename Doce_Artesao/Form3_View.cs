@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Doce_Artesao
 {
-    public partial class Form6 : Form
+    public partial class Form3_View : Form
     {
-        public Form6()
+        public Form3_View()
         {
             InitializeComponent();
         }
 
-        private void Form6_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
