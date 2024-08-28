@@ -26,5 +26,10 @@ namespace Doce_Artesao
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         this.Close();
+        }
     }
 }

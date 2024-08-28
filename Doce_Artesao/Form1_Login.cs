@@ -52,5 +52,10 @@ namespace Doce_Artesao
             tela.ShowDialog();
             this.Visible = true;
         }
+
+        private void tbxPassworld_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

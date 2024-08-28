@@ -93,6 +93,7 @@
             this.tbxPassworld.PasswordChar = '*';
             this.tbxPassworld.Size = new System.Drawing.Size(156, 23);
             this.tbxPassworld.TabIndex = 13;
+            this.tbxPassworld.TextChanged += new System.EventHandler(this.tbxPassworld_TextChanged);
             // 
             // lblPassword
             // 
