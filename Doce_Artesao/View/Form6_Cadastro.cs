@@ -47,5 +47,10 @@ namespace Doce_Artesao
         {
 
         }
+
+        private void tbxCode2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -46,60 +46,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form6_Cadastro.cs">
+    <Compile Include="Connection.cs" />
+    <Compile Include="Model\Candys.cs" />
+    <Compile Include="View\Form6_Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6_Cadastro.Designer.cs">
+    <Compile Include="View\Form6_Cadastro.Designer.cs">
       <DependentUpon>Form6_Cadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1_Login.cs">
+    <Compile Include="View\Form1_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1_Login.Designer.cs">
+    <Compile Include="View\Form1_Login.Designer.cs">
       <DependentUpon>Form1_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2_Menu.cs">
+    <Compile Include="View\Form2_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2_Menu.Designer.cs">
+    <Compile Include="View\Form2_Menu.Designer.cs">
       <DependentUpon>Form2_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3_View.cs">
+    <Compile Include="View\Form3_View.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3_View.Designer.cs">
+    <Compile Include="View\Form3_View.Designer.cs">
       <DependentUpon>Form3_View.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4_Encomenda.cs">
+    <Compile Include="View\Form4_Encomenda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4_Encomenda.Designer.cs">
+    <Compile Include="View\Form4_Encomenda.Designer.cs">
       <DependentUpon>Form4_Encomenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5_Pedido.cs">
+    <Compile Include="View\Form5_Pedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5_Pedido.Designer.cs">
+    <Compile Include="View\Form5_Pedido.Designer.cs">
       <DependentUpon>Form5_Pedido.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1_Login.resx">
+    <EmbeddedResource Include="View\Form1_Login.resx">
       <DependentUpon>Form1_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2_Menu.resx">
+    <EmbeddedResource Include="View\Form2_Menu.resx">
       <DependentUpon>Form2_Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3_View.resx">
+    <EmbeddedResource Include="View\Form3_View.resx">
       <DependentUpon>Form3_View.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4_Encomenda.resx">
+    <EmbeddedResource Include="View\Form4_Encomenda.resx">
       <DependentUpon>Form4_Encomenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5_Pedido.resx">
+    <EmbeddedResource Include="View\Form5_Pedido.resx">
       <DependentUpon>Form5_Pedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6_Cadastro.resx">
+    <EmbeddedResource Include="View\Form6_Cadastro.resx">
       <DependentUpon>Form6_Cadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -160,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Captura de tela 2024-08-27 144823.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

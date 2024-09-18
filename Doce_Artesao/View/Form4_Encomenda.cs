@@ -103,5 +103,10 @@ namespace Doce_Artesao
         {
 
         }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

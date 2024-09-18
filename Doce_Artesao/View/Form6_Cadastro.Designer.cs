@@ -131,6 +131,7 @@
             this.tbxCode2.PasswordChar = '*';
             this.tbxCode2.Size = new System.Drawing.Size(156, 20);
             this.tbxCode2.TabIndex = 13;
+            this.tbxCode2.TextChanged += new System.EventHandler(this.tbxCode2_TextChanged);
             // 
             // lblName
             // 
