@@ -35,13 +35,13 @@
             this.lblLogin = new System.Windows.Forms.Label();
             this.tbxPassworld = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pnlLogin = new System.Windows.Forms.Panel();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.ptbLogin = new System.Windows.Forms.PictureBox();
+            this.pnlLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // btnsave
@@ -105,31 +105,31 @@
             this.lblPassword.TabIndex = 12;
             this.lblPassword.Text = "SENHA";
             // 
-            // panel1
+            // pnlLogin
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.tbxPassworld);
-            this.panel1.Controls.Add(this.lblName);
-            this.panel1.Controls.Add(this.tbxCode);
-            this.panel1.Controls.Add(this.lblPassword);
-            this.panel1.Controls.Add(this.lblLogin);
-            this.panel1.Location = new System.Drawing.Point(336, 223);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(397, 237);
-            this.panel1.TabIndex = 15;
+            this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pnlLogin.Controls.Add(this.btnRegister);
+            this.pnlLogin.Controls.Add(this.tbxPassworld);
+            this.pnlLogin.Controls.Add(this.lblName);
+            this.pnlLogin.Controls.Add(this.tbxCode);
+            this.pnlLogin.Controls.Add(this.lblPassword);
+            this.pnlLogin.Controls.Add(this.lblLogin);
+            this.pnlLogin.Location = new System.Drawing.Point(336, 223);
+            this.pnlLogin.Name = "pnlLogin";
+            this.pnlLogin.Size = new System.Drawing.Size(397, 237);
+            this.pnlLogin.TabIndex = 15;
             // 
-            // button1
+            // btnRegister
             // 
-            this.button1.BackColor = System.Drawing.Color.LightCoral;
-            this.button1.Location = new System.Drawing.Point(247, 197);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 24);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "CADASTRAR";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            this.btnRegister.BackColor = System.Drawing.Color.LightCoral;
+            this.btnRegister.Location = new System.Drawing.Point(247, 197);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(136, 24);
+            this.btnRegister.TabIndex = 17;
+            this.btnRegister.Text = "CADASTRAR";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // pictureBox1
             // 
@@ -141,15 +141,15 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // ptbLogin
             // 
-            this.pictureBox2.Image = global::Doce_Artesao.Properties.Resources.Captura_de_tela_2024_08_27_144823;
-            this.pictureBox2.Location = new System.Drawing.Point(1, -4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1049, 638);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
+            this.ptbLogin.Image = global::Doce_Artesao.Properties.Resources.Captura_de_tela_2024_08_27_144823;
+            this.ptbLogin.Location = new System.Drawing.Point(1, -4);
+            this.ptbLogin.Name = "ptbLogin";
+            this.ptbLogin.Size = new System.Drawing.Size(1049, 638);
+            this.ptbLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbLogin.TabIndex = 16;
+            this.ptbLogin.TabStop = false;
             // 
             // frmMain
             // 
@@ -157,20 +157,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1048, 633);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnsave);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.ptbLogin);
             this.Font = new System.Drawing.Font("Sitka Banner", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmMain";
             this.Text = "Doce Artesão";
             this.Load += new System.EventHandler(this.frmMain_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlLogin.ResumeLayout(false);
+            this.pnlLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -184,9 +184,9 @@
         private System.Windows.Forms.TextBox tbxPassworld;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel pnlLogin;
+        private System.Windows.Forms.PictureBox ptbLogin;
+        private System.Windows.Forms.Button btnRegister;
     }
 }
 

@@ -28,46 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblMenu = new System.Windows.Forms.Label();
+            this.lblMenu2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnView11 = new System.Windows.Forms.Button();
+            this.pnlOrder11 = new System.Windows.Forms.Panel();
+            this.btnView10 = new System.Windows.Forms.Button();
+            this.pnlOrder10 = new System.Windows.Forms.Panel();
+            this.btnView12 = new System.Windows.Forms.Button();
+            this.pnlOrder12 = new System.Windows.Forms.Panel();
+            this.btnView9 = new System.Windows.Forms.Button();
+            this.btnView8 = new System.Windows.Forms.Button();
+            this.pnlOrder9 = new System.Windows.Forms.Panel();
+            this.pnlOrder8 = new System.Windows.Forms.Panel();
+            this.btnSaveBack2 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button17 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button20 = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.button23 = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
+            this.btnView16 = new System.Windows.Forms.Button();
+            this.pnlOrder16 = new System.Windows.Forms.Panel();
+            this.btnView15 = new System.Windows.Forms.Button();
+            this.pnlOrder15 = new System.Windows.Forms.Panel();
+            this.btnView17 = new System.Windows.Forms.Button();
+            this.pnlOrder17 = new System.Windows.Forms.Panel();
+            this.btnView14 = new System.Windows.Forms.Button();
+            this.btnView13 = new System.Windows.Forms.Button();
+            this.pnlOrder14 = new System.Windows.Forms.Panel();
+            this.pnlOrder13 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblMenu
+            // lblMenu2
             // 
-            this.lblMenu.AutoSize = true;
-            this.lblMenu.Font = new System.Drawing.Font("Sitka Banner", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu.Location = new System.Drawing.Point(377, 97);
-            this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(298, 35);
-            this.lblMenu.TabIndex = 9;
-            this.lblMenu.Text = "ENCOMENDAS REALIZADAS";
-            this.lblMenu.Click += new System.EventHandler(this.lblMenu_Click);
+            this.lblMenu2.AutoSize = true;
+            this.lblMenu2.Font = new System.Drawing.Font("Sitka Banner", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu2.Location = new System.Drawing.Point(377, 97);
+            this.lblMenu2.Name = "lblMenu2";
+            this.lblMenu2.Size = new System.Drawing.Size(298, 35);
+            this.lblMenu2.TabIndex = 9;
+            this.lblMenu2.Text = "ENCOMENDAS REALIZADAS";
+            this.lblMenu2.Click += new System.EventHandler(this.lblMenu_Click);
             // 
             // pictureBox1
             // 
@@ -78,244 +78,267 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.button14);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.btnView11);
+            this.panel1.Controls.Add(this.pnlOrder11);
+            this.panel1.Controls.Add(this.btnView10);
+            this.panel1.Controls.Add(this.pnlOrder10);
+            this.panel1.Controls.Add(this.btnView12);
+            this.panel1.Controls.Add(this.pnlOrder12);
+            this.panel1.Controls.Add(this.btnView9);
+            this.panel1.Controls.Add(this.btnView8);
+            this.panel1.Controls.Add(this.pnlOrder9);
+            this.panel1.Controls.Add(this.pnlOrder8);
             this.panel1.Location = new System.Drawing.Point(52, 153);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(354, 458);
             this.panel1.TabIndex = 11;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button5
+            // btnView11
             // 
-            this.button5.BackColor = System.Drawing.Color.LightCoral;
-            this.button5.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(121, 152);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(112, 26);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "VISUALIZAR";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnView11.BackColor = System.Drawing.Color.LightCoral;
+            this.btnView11.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView11.Location = new System.Drawing.Point(121, 324);
+            this.btnView11.Name = "btnView11";
+            this.btnView11.Size = new System.Drawing.Size(112, 26);
+            this.btnView11.TabIndex = 33;
+            this.btnView11.Text = "VISUALIZAR";
+            this.btnView11.UseVisualStyleBackColor = false;
+            this.btnView11.Click += new System.EventHandler(this.button14_Click);
             // 
-            // button4
+            // pnlOrder11
             // 
-            this.button4.BackColor = System.Drawing.Color.LightCoral;
-            this.button4.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(121, 66);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 26);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "VISUALIZAR";
-            this.button4.UseVisualStyleBackColor = false;
+            this.pnlOrder11.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlOrder11.Location = new System.Drawing.Point(15, 281);
+            this.pnlOrder11.Name = "pnlOrder11";
+            this.pnlOrder11.Size = new System.Drawing.Size(322, 37);
+            this.pnlOrder11.TabIndex = 30;
+            this.pnlOrder11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // panel3
+            // btnView10
             // 
-            this.panel3.BackColor = System.Drawing.Color.MistyRose;
-            this.panel3.Location = new System.Drawing.Point(15, 109);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(322, 37);
-            this.panel3.TabIndex = 14;
+            this.btnView10.BackColor = System.Drawing.Color.LightCoral;
+            this.btnView10.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView10.Location = new System.Drawing.Point(122, 242);
+            this.btnView10.Name = "btnView10";
+            this.btnView10.Size = new System.Drawing.Size(112, 26);
+            this.btnView10.TabIndex = 29;
+            this.btnView10.Text = "VISUALIZAR";
+            this.btnView10.UseVisualStyleBackColor = false;
+            this.btnView10.Click += new System.EventHandler(this.btnView10_Click);
             // 
-            // panel2
+            // pnlOrder10
             // 
-            this.panel2.BackColor = System.Drawing.Color.MistyRose;
-            this.panel2.Location = new System.Drawing.Point(15, 23);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(322, 37);
-            this.panel2.TabIndex = 0;
+            this.pnlOrder10.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlOrder10.Location = new System.Drawing.Point(16, 199);
+            this.pnlOrder10.Name = "pnlOrder10";
+            this.pnlOrder10.Size = new System.Drawing.Size(322, 37);
+            this.pnlOrder10.TabIndex = 26;
+            this.pnlOrder10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // button1
+            // btnView12
             // 
-            this.button1.BackColor = System.Drawing.Color.LightCoral;
-            this.button1.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(807, 586);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 36);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "SALVAR / VOLTAR ";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnView12.BackColor = System.Drawing.Color.LightCoral;
+            this.btnView12.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView12.Location = new System.Drawing.Point(122, 407);
+            this.btnView12.Name = "btnView12";
+            this.btnView12.Size = new System.Drawing.Size(112, 26);
+            this.btnView12.TabIndex = 25;
+            this.btnView12.Text = "VISUALIZAR";
+            this.btnView12.UseVisualStyleBackColor = false;
+            this.btnView12.Click += new System.EventHandler(this.button11_Click);
             // 
-            // button11
+            // pnlOrder12
             // 
-            this.button11.BackColor = System.Drawing.Color.LightCoral;
-            this.button11.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(122, 407);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(112, 26);
-            this.button11.TabIndex = 25;
-            this.button11.Text = "VISUALIZAR";
-            this.button11.UseVisualStyleBackColor = false;
+            this.pnlOrder12.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlOrder12.Location = new System.Drawing.Point(16, 364);
+            this.pnlOrder12.Name = "pnlOrder12";
+            this.pnlOrder12.Size = new System.Drawing.Size(322, 37);
+            this.pnlOrder12.TabIndex = 22;
+            this.pnlOrder12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // panel5
+            // btnView9
             // 
-            this.panel5.BackColor = System.Drawing.Color.MistyRose;
-            this.panel5.Location = new System.Drawing.Point(16, 364);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(322, 37);
-            this.panel5.TabIndex = 22;
+            this.btnView9.BackColor = System.Drawing.Color.LightCoral;
+            this.btnView9.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView9.Location = new System.Drawing.Point(121, 152);
+            this.btnView9.Name = "btnView9";
+            this.btnView9.Size = new System.Drawing.Size(112, 26);
+            this.btnView9.TabIndex = 17;
+            this.btnView9.Text = "VISUALIZAR";
+            this.btnView9.UseVisualStyleBackColor = false;
+            this.btnView9.Click += new System.EventHandler(this.btnView9_Click);
             // 
-            // button8
+            // btnView8
             // 
-            this.button8.BackColor = System.Drawing.Color.LightCoral;
-            this.button8.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(122, 242);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(112, 26);
-            this.button8.TabIndex = 29;
-            this.button8.Text = "VISUALIZAR";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnView8.BackColor = System.Drawing.Color.LightCoral;
+            this.btnView8.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView8.Location = new System.Drawing.Point(121, 66);
+            this.btnView8.Name = "btnView8";
+            this.btnView8.Size = new System.Drawing.Size(112, 26);
+            this.btnView8.TabIndex = 13;
+            this.btnView8.Text = "VISUALIZAR";
+            this.btnView8.UseVisualStyleBackColor = false;
+            this.btnView8.Click += new System.EventHandler(this.btnView8_Click);
             // 
-            // panel4
+            // pnlOrder9
             // 
-            this.panel4.BackColor = System.Drawing.Color.MistyRose;
-            this.panel4.Location = new System.Drawing.Point(16, 199);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(322, 37);
-            this.panel4.TabIndex = 26;
+            this.pnlOrder9.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlOrder9.Location = new System.Drawing.Point(15, 109);
+            this.pnlOrder9.Name = "pnlOrder9";
+            this.pnlOrder9.Size = new System.Drawing.Size(322, 37);
+            this.pnlOrder9.TabIndex = 14;
+            this.pnlOrder9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // button14
+            // pnlOrder8
             // 
-            this.button14.BackColor = System.Drawing.Color.LightCoral;
-            this.button14.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(121, 324);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(112, 26);
-            this.button14.TabIndex = 33;
-            this.button14.Text = "VISUALIZAR";
-            this.button14.UseVisualStyleBackColor = false;
+            this.pnlOrder8.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlOrder8.Location = new System.Drawing.Point(15, 23);
+            this.pnlOrder8.Name = "pnlOrder8";
+            this.pnlOrder8.Size = new System.Drawing.Size(322, 37);
+            this.pnlOrder8.TabIndex = 0;
+            this.pnlOrder8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // panel6
+            // btnSaveBack2
             // 
-            this.panel6.BackColor = System.Drawing.Color.MistyRose;
-            this.panel6.Location = new System.Drawing.Point(15, 281);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(322, 37);
-            this.panel6.TabIndex = 30;
+            this.btnSaveBack2.BackColor = System.Drawing.Color.LightCoral;
+            this.btnSaveBack2.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveBack2.Location = new System.Drawing.Point(807, 586);
+            this.btnSaveBack2.Name = "btnSaveBack2";
+            this.btnSaveBack2.Size = new System.Drawing.Size(230, 36);
+            this.btnSaveBack2.TabIndex = 12;
+            this.btnSaveBack2.Text = "SALVAR / VOLTAR ";
+            this.btnSaveBack2.UseVisualStyleBackColor = false;
+            this.btnSaveBack2.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel7.Controls.Add(this.button17);
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Controls.Add(this.button20);
-            this.panel7.Controls.Add(this.panel9);
-            this.panel7.Controls.Add(this.button23);
-            this.panel7.Controls.Add(this.panel10);
-            this.panel7.Controls.Add(this.button26);
-            this.panel7.Controls.Add(this.button27);
-            this.panel7.Controls.Add(this.panel11);
-            this.panel7.Controls.Add(this.panel12);
+            this.panel7.Controls.Add(this.btnView16);
+            this.panel7.Controls.Add(this.pnlOrder16);
+            this.panel7.Controls.Add(this.btnView15);
+            this.panel7.Controls.Add(this.pnlOrder15);
+            this.panel7.Controls.Add(this.btnView17);
+            this.panel7.Controls.Add(this.pnlOrder17);
+            this.panel7.Controls.Add(this.btnView14);
+            this.panel7.Controls.Add(this.btnView13);
+            this.panel7.Controls.Add(this.pnlOrder14);
+            this.panel7.Controls.Add(this.pnlOrder13);
             this.panel7.Location = new System.Drawing.Point(427, 153);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(354, 458);
             this.panel7.TabIndex = 34;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
-            // button17
+            // btnView16
             // 
-            this.button17.BackColor = System.Drawing.Color.LightCoral;
-            this.button17.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(121, 324);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(112, 26);
-            this.button17.TabIndex = 33;
-            this.button17.Text = "VISUALIZAR";
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnView16.BackColor = System.Drawing.Color.LightCoral;
+            this.btnView16.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView16.Location = new System.Drawing.Point(121, 324);
+            this.btnView16.Name = "btnView16";
+            this.btnView16.Size = new System.Drawing.Size(112, 26);
+            this.btnView16.TabIndex = 33;
+            this.btnView16.Text = "VISUALIZAR";
+            this.btnView16.UseVisualStyleBackColor = false;
+            this.btnView16.Click += new System.EventHandler(this.button17_Click);
             // 
-            // panel8
+            // pnlOrder16
             // 
-            this.panel8.BackColor = System.Drawing.Color.MistyRose;
-            this.panel8.Location = new System.Drawing.Point(15, 281);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(322, 37);
-            this.panel8.TabIndex = 30;
+            this.pnlOrder16.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlOrder16.Location = new System.Drawing.Point(15, 281);
+            this.pnlOrder16.Name = "pnlOrder16";
+            this.pnlOrder16.Size = new System.Drawing.Size(322, 37);
+            this.pnlOrder16.TabIndex = 30;
+            this.pnlOrder16.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
-            // button20
+            // btnView15
             // 
-            this.button20.BackColor = System.Drawing.Color.LightCoral;
-            this.button20.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(122, 242);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(112, 26);
-            this.button20.TabIndex = 29;
-            this.button20.Text = "VISUALIZAR";
-            this.button20.UseVisualStyleBackColor = false;
+            this.btnView15.BackColor = System.Drawing.Color.LightCoral;
+            this.btnView15.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView15.Location = new System.Drawing.Point(122, 242);
+            this.btnView15.Name = "btnView15";
+            this.btnView15.Size = new System.Drawing.Size(112, 26);
+            this.btnView15.TabIndex = 29;
+            this.btnView15.Text = "VISUALIZAR";
+            this.btnView15.UseVisualStyleBackColor = false;
+            this.btnView15.Click += new System.EventHandler(this.button20_Click);
             // 
-            // panel9
+            // pnlOrder15
             // 
-            this.panel9.BackColor = System.Drawing.Color.MistyRose;
-            this.panel9.Location = new System.Drawing.Point(16, 199);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(322, 37);
-            this.panel9.TabIndex = 26;
+            this.pnlOrder15.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlOrder15.Location = new System.Drawing.Point(16, 199);
+            this.pnlOrder15.Name = "pnlOrder15";
+            this.pnlOrder15.Size = new System.Drawing.Size(322, 37);
+            this.pnlOrder15.TabIndex = 26;
+            this.pnlOrder15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
-            // button23
+            // btnView17
             // 
-            this.button23.BackColor = System.Drawing.Color.LightCoral;
-            this.button23.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(122, 407);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(112, 26);
-            this.button23.TabIndex = 25;
-            this.button23.Text = "VISUALIZAR";
-            this.button23.UseVisualStyleBackColor = false;
+            this.btnView17.BackColor = System.Drawing.Color.LightCoral;
+            this.btnView17.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView17.Location = new System.Drawing.Point(122, 407);
+            this.btnView17.Name = "btnView17";
+            this.btnView17.Size = new System.Drawing.Size(112, 26);
+            this.btnView17.TabIndex = 25;
+            this.btnView17.Text = "VISUALIZAR";
+            this.btnView17.UseVisualStyleBackColor = false;
+            this.btnView17.Click += new System.EventHandler(this.button23_Click);
             // 
-            // panel10
+            // pnlOrder17
             // 
-            this.panel10.BackColor = System.Drawing.Color.MistyRose;
-            this.panel10.Location = new System.Drawing.Point(16, 364);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(322, 37);
-            this.panel10.TabIndex = 22;
+            this.pnlOrder17.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlOrder17.Location = new System.Drawing.Point(16, 364);
+            this.pnlOrder17.Name = "pnlOrder17";
+            this.pnlOrder17.Size = new System.Drawing.Size(322, 37);
+            this.pnlOrder17.TabIndex = 22;
+            this.pnlOrder17.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
-            // button26
+            // btnView14
             // 
-            this.button26.BackColor = System.Drawing.Color.LightCoral;
-            this.button26.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.Location = new System.Drawing.Point(121, 152);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(112, 26);
-            this.button26.TabIndex = 17;
-            this.button26.Text = "VISUALIZAR";
-            this.button26.UseVisualStyleBackColor = false;
+            this.btnView14.BackColor = System.Drawing.Color.LightCoral;
+            this.btnView14.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView14.Location = new System.Drawing.Point(121, 152);
+            this.btnView14.Name = "btnView14";
+            this.btnView14.Size = new System.Drawing.Size(112, 26);
+            this.btnView14.TabIndex = 17;
+            this.btnView14.Text = "VISUALIZAR";
+            this.btnView14.UseVisualStyleBackColor = false;
+            this.btnView14.Click += new System.EventHandler(this.button26_Click);
             // 
-            // button27
+            // btnView13
             // 
-            this.button27.BackColor = System.Drawing.Color.LightCoral;
-            this.button27.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.Location = new System.Drawing.Point(121, 66);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(112, 26);
-            this.button27.TabIndex = 13;
-            this.button27.Text = "VISUALIZAR";
-            this.button27.UseVisualStyleBackColor = false;
+            this.btnView13.BackColor = System.Drawing.Color.LightCoral;
+            this.btnView13.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView13.Location = new System.Drawing.Point(121, 66);
+            this.btnView13.Name = "btnView13";
+            this.btnView13.Size = new System.Drawing.Size(112, 26);
+            this.btnView13.TabIndex = 13;
+            this.btnView13.Text = "VISUALIZAR";
+            this.btnView13.UseVisualStyleBackColor = false;
+            this.btnView13.Click += new System.EventHandler(this.button27_Click);
             // 
-            // panel11
+            // pnlOrder14
             // 
-            this.panel11.BackColor = System.Drawing.Color.MistyRose;
-            this.panel11.Location = new System.Drawing.Point(15, 109);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(322, 37);
-            this.panel11.TabIndex = 14;
+            this.pnlOrder14.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlOrder14.Location = new System.Drawing.Point(15, 109);
+            this.pnlOrder14.Name = "pnlOrder14";
+            this.pnlOrder14.Size = new System.Drawing.Size(322, 37);
+            this.pnlOrder14.TabIndex = 14;
+            this.pnlOrder14.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
-            // panel12
+            // pnlOrder13
             // 
-            this.panel12.BackColor = System.Drawing.Color.MistyRose;
-            this.panel12.Location = new System.Drawing.Point(15, 23);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(322, 37);
-            this.panel12.TabIndex = 0;
+            this.pnlOrder13.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlOrder13.Location = new System.Drawing.Point(15, 23);
+            this.pnlOrder13.Name = "pnlOrder13";
+            this.pnlOrder13.Size = new System.Drawing.Size(322, 37);
+            this.pnlOrder13.TabIndex = 0;
+            this.pnlOrder13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
             // Form5_Pedido
             // 
@@ -324,9 +347,9 @@
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1049, 634);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSaveBack2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblMenu);
+            this.Controls.Add(this.lblMenu2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form5_Pedido";
             this.Text = "Form6";
@@ -341,30 +364,30 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblMenu;
+        private System.Windows.Forms.Label lblMenu2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnView9;
+        private System.Windows.Forms.Button btnView8;
+        private System.Windows.Forms.Panel pnlOrder9;
+        private System.Windows.Forms.Panel pnlOrder8;
+        private System.Windows.Forms.Button btnSaveBack2;
+        private System.Windows.Forms.Button btnView11;
+        private System.Windows.Forms.Panel pnlOrder11;
+        private System.Windows.Forms.Button btnView10;
+        private System.Windows.Forms.Panel pnlOrder10;
+        private System.Windows.Forms.Button btnView12;
+        private System.Windows.Forms.Panel pnlOrder12;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Button btnView16;
+        private System.Windows.Forms.Panel pnlOrder16;
+        private System.Windows.Forms.Button btnView15;
+        private System.Windows.Forms.Panel pnlOrder15;
+        private System.Windows.Forms.Button btnView17;
+        private System.Windows.Forms.Panel pnlOrder17;
+        private System.Windows.Forms.Button btnView14;
+        private System.Windows.Forms.Button btnView13;
+        private System.Windows.Forms.Panel pnlOrder14;
+        private System.Windows.Forms.Panel pnlOrder13;
     }
 }

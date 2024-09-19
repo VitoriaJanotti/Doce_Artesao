@@ -52,5 +52,10 @@ namespace Doce_Artesao
         {
 
         }
+
+        private void txbPassword3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

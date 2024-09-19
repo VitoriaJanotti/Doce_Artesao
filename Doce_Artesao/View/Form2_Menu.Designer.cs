@@ -33,9 +33,9 @@
             this.btnThrow = new System.Windows.Forms.Button();
             this.btnMade = new System.Windows.Forms.Button();
             this.lblMenu = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.ptbMenu = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // btnView
@@ -82,27 +82,27 @@
             this.lblMenu.Text = "MENU";
             this.lblMenu.Click += new System.EventHandler(this.lblMenu_Click);
             // 
-            // button1
+            // btnBack
             // 
-            this.button1.BackColor = System.Drawing.Color.LightCoral;
-            this.button1.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(408, 465);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 36);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "VOLTAR";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnBack.BackColor = System.Drawing.Color.LightCoral;
+            this.btnBack.Font = new System.Drawing.Font("Sitka Banner", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(408, 465);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(230, 36);
+            this.btnBack.TabIndex = 6;
+            this.btnBack.Text = "VOLTAR";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox1
+            // ptbMenu
             // 
-            this.pictureBox1.Image = global::Doce_Artesao.Properties.Resources.Captura_de_tela_2024_08_27_144823;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1057, 642);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.ptbMenu.Image = global::Doce_Artesao.Properties.Resources.Captura_de_tela_2024_08_27_144823;
+            this.ptbMenu.Location = new System.Drawing.Point(-1, 0);
+            this.ptbMenu.Name = "ptbMenu";
+            this.ptbMenu.Size = new System.Drawing.Size(1057, 642);
+            this.ptbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbMenu.TabIndex = 7;
+            this.ptbMenu.TabStop = false;
             // 
             // Form2_Menu
             // 
@@ -110,17 +110,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1055, 638);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblMenu);
             this.Controls.Add(this.btnMade);
             this.Controls.Add(this.btnThrow);
             this.Controls.Add(this.btnView);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ptbMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2_Menu";
             this.Text = "Doce artesão ";
             this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,7 +132,7 @@
         private System.Windows.Forms.Button btnThrow;
         private System.Windows.Forms.Button btnMade;
         private System.Windows.Forms.Label lblMenu;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.PictureBox ptbMenu;
     }
 }
