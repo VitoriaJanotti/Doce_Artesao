@@ -138,6 +138,7 @@
             this.btnAdd1.TabIndex = 33;
             this.btnAdd1.Text = "ADD";
             this.btnAdd1.UseVisualStyleBackColor = true;
+            this.btnAdd1.Click += new System.EventHandler(this.btnAdd1_Click);
             // 
             // lblAmount1
             // 
@@ -215,6 +216,7 @@
             this.livBuy.TabIndex = 49;
             this.livBuy.UseCompatibleStateImageBehavior = false;
             this.livBuy.View = System.Windows.Forms.View.Details;
+            this.livBuy.SelectedIndexChanged += new System.EventHandler(this.livBuy_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -286,6 +288,7 @@
             this.dtpDay.Name = "dtpDay";
             this.dtpDay.Size = new System.Drawing.Size(214, 20);
             this.dtpDay.TabIndex = 43;
+            this.dtpDay.ValueChanged += new System.EventHandler(this.dtpDay_ValueChanged);
             // 
             // lblWithdrawal
             // 

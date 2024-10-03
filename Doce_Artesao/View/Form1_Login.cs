@@ -20,7 +20,10 @@ namespace Doce_Artesao
         private void button1_Click(object sender, EventArgs e)
         {
             string name = tbxCode.Text;
-            MessageBox.Show("NOME: " + name);
+            string password = tbxPassworld.Text;
+            MessageBox.Show(
+                "NOME: " + name +
+                "\nSENHA: " + password);
             this.Visible = false;
             Form2_Menu tela = new Form2_Menu();
            

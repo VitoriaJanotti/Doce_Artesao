@@ -101,7 +101,18 @@ namespace Doce_Artesao
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            string pay = cbxPay.Text;
+            string retirada = cbxWithdrawal.Text;
+            string obs = tbxObject.Text;
+            string nameC = tbxName2.Text;
+            string date = dtpDay.Text;
 
+            MessageBox.Show(
+                "NOME DO CLIENTE: " + nameC +
+                "\nMODO DE PAGAMENTO: " + pay +
+                "\nDIA DA RETIRADA: " + date +
+                "\nMODO DE RETIRADA: " + retirada +
+                "\nOBSERVÇÃO DO PEDIDO: " + obs);
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
@@ -120,6 +131,21 @@ namespace Doce_Artesao
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void livBuy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpDay_ValueChanged(object sender, EventArgs e)
         {
 
         }
