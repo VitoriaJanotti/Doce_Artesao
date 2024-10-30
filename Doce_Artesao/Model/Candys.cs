@@ -12,13 +12,21 @@ namespace Doce_Artesao
         public string NomeDoce { get; set; }
         public float Preco { get; set; }
 
-        public Candys(int coddoces, string nomedoce, float preco)
+        public Candys(int coddoces, string nomedoce, 
+            float preco) : this(coddoces, nomedoce, preco)
+       
+        {
+            CodDoces = coddoces;
+        }
        
         {
         CodDoces = coddoces;
         NomeDoce = nomedoce;
         Preco = preco;
         }
-      
+
+        public Candys()
+        {
+        }
     }
 }

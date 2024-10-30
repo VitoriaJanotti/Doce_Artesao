@@ -46,8 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connection.cs" />
+    <Compile Include="Controller\Connection.cs" />
     <Compile Include="Model\Candys.cs" />
+    <Compile Include="Model\CandysDAO.cs" />
+    <Compile Include="Model\Venddores.cs" />
+    <Compile Include="Model\VendedoresDAO.cs" />
+    <Compile Include="View\Form7_CadDoces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form7_CadDoces.Designer.cs">
+      <DependentUpon>Form7_CadDoces.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Form6_Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +123,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\Form7_CadDoces.resx">
+      <DependentUpon>Form7_CadDoces.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -163,8 +175,6 @@
   <ItemGroup>
     <None Include="Resources\Captura de tela 2024-08-27 144823.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
