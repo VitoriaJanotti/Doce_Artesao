@@ -49,7 +49,7 @@
     <Compile Include="Controller\Connection.cs" />
     <Compile Include="Model\Candys.cs" />
     <Compile Include="Model\CandysDAO.cs" />
-    <Compile Include="Model\Venddores.cs" />
+    <Compile Include="Model\Vendedores.cs" />
     <Compile Include="Model\VendedoresDAO.cs" />
     <Compile Include="View\Form7_CadDoces.cs">
       <SubType>Form</SubType>

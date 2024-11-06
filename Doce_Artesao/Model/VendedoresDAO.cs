@@ -7,41 +7,26 @@ namespace Doce_Artesao.Model
 {
     internal class VendedoresDAO
     {
-        private object CodVendedor;
-        private object NomeVendedor;
 
         private Connection Con { get; set; }
         private SqlCommand Cmd { get; set; }
-        public object SenhaVendedor { get; private set; }
-        public string V1 { get; }
-        public string V2 { get; }
-        public string V3 { get; }
-        public string V4 { get; }
-        public string V5 { get; }
-        public string V6 { get; }
+        
+        
+        
 
-        public VendedoresDAO(int v)
+        public VendedoresDAO()
         {
             Con = new Connection();
             Cmd = new SqlCommand();
         }
 
-        public VendedoresDAO(int v, string v1, string v2, string v3, string v4, string v5, string v6) : this(v)
-        {
-            V1 = v1;
-            V2 = v2;
-            V3 = v3;
-            V4 = v4;
-            V5 = v5;
-            V6 = v6;
-        }
 
-        public void Insert(VendedoresDAO vendedores)
+        public void Insert(Vendedores vendedores)
         {
             Cmd.Connection = Con.ReturnConnect();
-            Cmd.CommandText = @"INSERT INTO Candys VALUES (@CodVendedor,@NomeVendedor, @SenhaVendedor)";
+            Cmd.CommandText = @"INSERT INTO Vendedor VALUES (@NomeVendedor, @SenhaVendedor)";
 
-            Cmd.Parameters.AddWithValue("@CodVendedor", vendedores.CodVendedor);
+
             Cmd.Parameters.AddWithValue("@NomeVendedor", vendedores.NomeVendedor);
             Cmd.Parameters.AddWithValue("@SenhaVendedor", vendedores.SenhaVendedor);
 
@@ -60,13 +45,13 @@ namespace Doce_Artesao.Model
                 Con.CloseConnect();
             }
         }
-            public void Update(VendedoresDAO vendedores)
+            public void Update(Vendedores vendedores)
             {
                 Cmd.Connection = Con.ReturnConnection();
-                Cmd.CommandText = @"UPDATE Vendedores SET CodVendedor = @CodVendedor, NomeVendedor = @NomeVendedor,
+                Cmd.CommandText = @"UPDATE Vendedor SET NomeVendedor = @NomeVendedor,
                 SenhaVendedor = @SenhaVendedor WHERE Id = @id";
 
-                 Cmd.Parameters.AddWithValue("@CodVendedor", vendedores.CodVendedor);
+                 Cmd.Parameters.AddWithValue("@id", vendedores.Id);
                  Cmd.Parameters.AddWithValue("@NomeVendedor", vendedores.NomeVendedor);
                  Cmd.Parameters.AddWithValue("@SenhaVendedor", vendedores.SenhaVendedor);
             try
@@ -83,11 +68,11 @@ namespace Doce_Artesao.Model
                 }
             }
 
-            public void Delete(int CodVendedor)
+            public void Delete(int codVendedor)
             {
                 Cmd.Connection = Con.ReturnConnection();
-                Cmd.CommandText = @"DELETE FROM Vendedores WHERE CodVendedores = @CodVendedores";
-                Cmd.Parameters.AddWithValue("@CodVendedor", CodVendedor);
+                Cmd.CommandText = @"DELETE FROM Vendedor WHERE Id = @id";
+                Cmd.Parameters.AddWithValue("@id", codVendedor);
                 try
                 {
                     Cmd.ExecuteNonQuery();
@@ -101,13 +86,13 @@ namespace Doce_Artesao.Model
                     Con.CloseConnection();
                 }
             }
-            public List<VendedoresDAO> ListAllVendedores()
+            public List<Vendedores> ListAllVendedores()
             {
 
                 Cmd.Connection = Con.ReturnConnection();
-                Cmd.CommandText = "SELECT * FROM Vendedores";
+                Cmd.CommandText = "SELECT * FROM Vendedor";
 
-                List<VendedoresDAO> vendedores = new List<VendedoresDAO>(); //Instancio a list com o tamanho padrão.
+                List<Vendedores> vendedores = new List<Vendedores>(); //Instancio a list com o tamanho padrão.
                 try
                 {
                     SqlDataReader rd = Cmd.ExecuteReader();
@@ -115,12 +100,11 @@ namespace Doce_Artesao.Model
                     //Enquanto for possível continuar a leitura das linhas que foram retornadas na consulta, execute.
                     while (rd.Read())
                     {
-                        VendedoresDAO vendedores = new VendedoresDAO(
-                            (int)rd["CodVendedor"],
-                            (string)rd["Nomevendedor"],
-                            (string)rd["Email"],
-                            "000");
-                        listaDeUsuarios.Add(usuario);
+                        Vendedores vendedor = new Vendedores(
+                            (int)rd["Id"],
+                            (string)rd["NomeVendedor"],
+                            (string)rd["SenhaVendedor"]);
+                        vendedores.Add(vendedor);
                     }
                     rd.Close();
                 }
@@ -133,7 +117,7 @@ namespace Doce_Artesao.Model
                     Con.CloseConnection();
                 }
 
-                return listaDeUsuarios;
+                return vendedores;
             }
         
     }

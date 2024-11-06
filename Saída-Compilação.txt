@@ -1,0 +1,6 @@
+﻿A construção começou em 10:17...
+1>------ Compilação iniciada: Projeto: Doce_Artesao, Configuração: Debug Any CPU ------
+1>C:\Users\CJ3021955\Source\Repos\Doce_Artesao_\Doce_Artesao\Model\Vendedores.cs(11,24,11,35): warning CS0169: O campo "Vendedores.codvendedor" nunca é usado
+1>  Doce_Artesao -> C:\Users\CJ3021955\Source\Repos\Doce_Artesao_\Doce_Artesao\bin\Debug\Doce_Artesao.exe
+========== Compilação: 1 bem-sucedida, 0 com falha, 0 atualizada, 0 ignorada ==========
+========== Compilação concluído às 10:17 e levou 00,458 segundos ==========

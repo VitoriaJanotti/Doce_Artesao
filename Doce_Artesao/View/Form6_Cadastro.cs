@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Doce_Artesao.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +22,6 @@ namespace Doce_Artesao
         private void button1_Click(object sender, EventArgs e)
         {
             string name = tbxName2.Text;
-            string code = tbxCode2.Text;
             string pass = txbPassword2.Text;
             string password = txbPassword3.Text;
 
@@ -32,10 +32,12 @@ namespace Doce_Artesao
            
             MessageBox.Show(
                 "NOME DO VENDEDOR: " + name +
-                "\nCÓDIGO DO VENDEDOR: " + code +
                 "\nSENHA: " + password);
-            this.Visible = false;
-            Form2_Menu tela = new Form2_Menu();
+            Vendedores vendedor = new Vendedores(name, pass);
+            VendedoresDAO vendedoresDAO = new VendedoresDAO();
+            vendedoresDAO.Insert(vendedor);
+            
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

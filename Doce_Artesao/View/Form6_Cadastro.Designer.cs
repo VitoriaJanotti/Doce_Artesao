@@ -35,10 +35,8 @@
             this.txbPassword2 = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.btnCadastro = new System.Windows.Forms.Button();
-            this.tbxCode2 = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.tbxName2 = new System.Windows.Forms.TextBox();
-            this.lblCode = new System.Windows.Forms.Label();
             this.lblLogin = new System.Windows.Forms.Label();
             this.btnSaveBack3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,19 +61,17 @@
             this.pnlLogin.Controls.Add(this.txbPassword2);
             this.pnlLogin.Controls.Add(this.lblPassword);
             this.pnlLogin.Controls.Add(this.btnCadastro);
-            this.pnlLogin.Controls.Add(this.tbxCode2);
             this.pnlLogin.Controls.Add(this.lblName);
             this.pnlLogin.Controls.Add(this.tbxName2);
-            this.pnlLogin.Controls.Add(this.lblCode);
             this.pnlLogin.Controls.Add(this.lblLogin);
             this.pnlLogin.Location = new System.Drawing.Point(330, 146);
             this.pnlLogin.Name = "pnlLogin";
-            this.pnlLogin.Size = new System.Drawing.Size(397, 403);
+            this.pnlLogin.Size = new System.Drawing.Size(397, 359);
             this.pnlLogin.TabIndex = 16;
             // 
             // txbPassword3
             // 
-            this.txbPassword3.Location = new System.Drawing.Point(11, 284);
+            this.txbPassword3.Location = new System.Drawing.Point(11, 221);
             this.txbPassword3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbPassword3.Name = "txbPassword3";
             this.txbPassword3.PasswordChar = '*';
@@ -87,7 +83,7 @@
             // 
             this.lblPassword2.AutoSize = true;
             this.lblPassword2.Font = new System.Drawing.Font("Sitka Banner", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword2.Location = new System.Drawing.Point(7, 261);
+            this.lblPassword2.Location = new System.Drawing.Point(7, 198);
             this.lblPassword2.Name = "lblPassword2";
             this.lblPassword2.Size = new System.Drawing.Size(101, 19);
             this.lblPassword2.TabIndex = 20;
@@ -95,7 +91,7 @@
             // 
             // txbPassword2
             // 
-            this.txbPassword2.Location = new System.Drawing.Point(11, 226);
+            this.txbPassword2.Location = new System.Drawing.Point(11, 163);
             this.txbPassword2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbPassword2.Name = "txbPassword2";
             this.txbPassword2.PasswordChar = '*';
@@ -106,7 +102,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Sitka Banner", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(7, 203);
+            this.lblPassword.Location = new System.Drawing.Point(7, 140);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(46, 19);
             this.lblPassword.TabIndex = 18;
@@ -115,7 +111,7 @@
             // btnCadastro
             // 
             this.btnCadastro.BackColor = System.Drawing.Color.MistyRose;
-            this.btnCadastro.Location = new System.Drawing.Point(247, 364);
+            this.btnCadastro.Location = new System.Drawing.Point(246, 303);
             this.btnCadastro.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(136, 24);
@@ -123,16 +119,6 @@
             this.btnCadastro.Text = "CADASTRAR";
             this.btnCadastro.UseVisualStyleBackColor = false;
             this.btnCadastro.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // tbxCode2
-            // 
-            this.tbxCode2.Location = new System.Drawing.Point(11, 166);
-            this.tbxCode2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbxCode2.Name = "tbxCode2";
-            this.tbxCode2.PasswordChar = '*';
-            this.tbxCode2.Size = new System.Drawing.Size(156, 20);
-            this.tbxCode2.TabIndex = 13;
-            this.tbxCode2.TextChanged += new System.EventHandler(this.tbxCode2_TextChanged);
             // 
             // lblName
             // 
@@ -152,16 +138,6 @@
             this.tbxName2.Size = new System.Drawing.Size(256, 20);
             this.tbxName2.TabIndex = 4;
             this.tbxName2.TextChanged += new System.EventHandler(this.tbxCode_TextChanged);
-            // 
-            // lblCode
-            // 
-            this.lblCode.AutoSize = true;
-            this.lblCode.Font = new System.Drawing.Font("Sitka Banner", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCode.Location = new System.Drawing.Point(7, 143);
-            this.lblCode.Name = "lblCode";
-            this.lblCode.Size = new System.Drawing.Size(140, 19);
-            this.lblCode.TabIndex = 12;
-            this.lblCode.Text = "CÓDIGO DO  VENDEDOR ";
             // 
             // lblLogin
             // 
@@ -207,10 +183,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlLogin;
         private System.Windows.Forms.Button btnCadastro;
-        private System.Windows.Forms.TextBox tbxCode2;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TextBox tbxName2;
-        private System.Windows.Forms.Label lblCode;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.TextBox txbPassword3;
         private System.Windows.Forms.Label lblPassword2;
